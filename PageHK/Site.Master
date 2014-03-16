@@ -12,6 +12,8 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Style/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -31,7 +33,7 @@
             <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
             <asp:ScriptReference Name="WebFormsBundle" />
             <%--Site Scripts--%>
-
+            
         </Scripts>
     </asp:ScriptManager>
     <header style="box-shadow:0px 0px 10px black; height: 76px; z-index:1000000; position: fixed; width: 100%; background-color: white; top: 0;">
@@ -71,13 +73,13 @@
             </div>
         </div>
     </header>
-    <div id="body" style="background:url(Images/Hong_Kong_Island_Skyline_2009.jpg) 50% 0 repeat; min-height: 600px; z-index: 9999; padding-top: 76px; ">
+    <div id="body" style="background:url(Images/DB-Results-Hong-Kong-panormaic-view2.jpg) repeat center; min-height: 600px; z-index: 9999; padding-top: 76px;box-sizing:content-box ">
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
         <section class="content-wrapper main-content clear-fix" style="width:100%">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
     </div>
-        <footer>
+        <footer class="modal-footer">
             <div class="content-wrapper">
             <div class="float-left">
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
