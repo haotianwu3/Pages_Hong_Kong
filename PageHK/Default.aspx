@@ -5,5 +5,5 @@
     </section>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <asp:Image ID="Image1" runat="server" Height="16px" />
+    <asp:Image ID="Image1" runat="server"  ImageUrl="http://upload.wikimedia.org/wikipedia/commons/0/0e/Hong_Kong_Island_Skyline_2009.jpg" Width="100%"/>
 </asp:Content>
