@@ -34,11 +34,13 @@
 
         </Scripts>
     </asp:ScriptManager>
-    <header>
+    <header style="box-shadow:0px 0px 10px black; height: 76px; z-index:1000000; position: fixed; width: 100%; background-color: white; top: 0;">
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">logo here</a>
+                    <a runat="server" href="index.aspx">
+                        <img src="Images/PageHK%20logo.jpg" style="width:150px"/>
+                    </a>
                 </p>
             </div>
             <div class="float-right">
@@ -69,7 +71,7 @@
             </div>
         </div>
     </header>
-    <div id="body">
+    <div id="body" style="background:url(Images/Hong_Kong_Island_Skyline_2009.jpg) 50% 0 repeat; min-height: 600px; z-index: 9999; padding-top: 76px; ">
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
         <section class="content-wrapper main-content clear-fix" style="width:100%">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
